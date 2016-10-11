@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LE5-Z4-Am4"/>
+                        <viewControllerLayoutGuide type="bottom" id="mNk-pX-FNy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4AM-jj-fek">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Javascript and C#" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="195" y="405" width="210" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="83" y="438" width="209.5" height="31.5"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016 - 10 - 11  By Ann" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="391" y="560" width="167" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="166" y="627" width="167" height="20"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="55" firstAttribute="width" constant="167"/>
+                                    <constraint id="56" firstAttribute="height" constant="20"/>
+                                </constraints>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="32" translatesAutoresizingMaskIntoConstraints="NO" image="splash-xamagon">
+                                <rect key="frame" x="236" y="192" width="128" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="communication between " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="48" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="170.5" y="357" width="259" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="33" firstItem="4AM-jj-fek" firstAttribute="centerY" secondItem="32" secondAttribute="centerY" constant="44"/>
+                            <constraint id="34" firstItem="32" firstAttribute="centerX" secondItem="4AM-jj-fek" secondAttribute="centerX"/>
+                            <constraint id="49" firstItem="48" firstAttribute="centerX" secondItem="32" secondAttribute="centerX"/>
+                            <constraint id="50" firstItem="4" firstAttribute="centerX" secondItem="32" secondAttribute="centerX"/>
+                            <constraint id="51" firstItem="48" firstAttribute="top" secondItem="32" secondAttribute="bottom" constant="37"/>
+                            <constraint id="53" firstItem="4AM-jj-fek" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" constant="20"/>
+                            <constraint id="54" firstItem="4AM-jj-fek" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" constant="42"/>
+                            <constraint id="57" firstItem="4" firstAttribute="top" secondItem="48" secondAttribute="bottom" constant="20"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash-xamagon" width="128" height="128"/>
+        <image name="Xamarin.png" width="600" height="145"/>
+    </resources>
+</document>

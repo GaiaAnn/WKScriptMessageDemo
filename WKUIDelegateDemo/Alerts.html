@@ -1,0 +1,41 @@
+﻿
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.25">
+
+	<head>
+		<title></title>
+
+	</head>
+	<style>
+		p{
+		    font-family: Verdana;
+			font-size : 13px;
+		 }
+		</style>
+	<body>
+	<p><br />This is a WKWebView </p>
+
+	<button onClick="callCsharp()">Tell C# a Secret!</button>
+	<button onClick="btnreset()">Reset</button>
+	<p id ="status"> HTML : No Secret ... </p>
+
+
+	<script>
+		function callCsharp(){ 
+					window.webkit.messageHandlers.myapp.postMessage("Thanks for watching");
+                 }
+
+		function ChangeValue(secret)
+		{ 
+			document.getElementById("status").innerHTML = "C# : Secret is .. " + secret;
+			//document.getElementById("status").innerHTML = "From CSharp";
+        }
+
+		function btnreset()
+		{ 
+			document.getElementById("status").innerHTML = "HTML : No Secret ..." ;
+        }
+				
+	</script>
+	</body>
+</html>
